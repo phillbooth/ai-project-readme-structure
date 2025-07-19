@@ -1,0 +1,35 @@
+{
+  "name": "@phillipbooth/ai-project-readme-structure",
+  "version": "1.0.0",
+  "description": "A standardized definition and templates for AI-friendly project documentation (ai-manifest.json and .ai/README.md).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests defined for this README structure project.\"",
+    "validate-ai-manifest": "echo \"Add schema validation script here if needed.\""
+  },
+  "files": [
+    "index.js",
+    "templates/",
+    "ai-manifest.schema.json"
+  ],
+  "keywords": [
+    "AI",
+    "README",
+    "documentation",
+    "project-structure",
+    "developer-tools",
+    "standard",
+    "ai-readme"
+  ],
+  "author": "PHILLIP BOOTH",
+  "license": "Apache-2.0",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phillipbooth/ai-project-readme-structure.git"
+  },
+  "bugs": {
+    "url": "https://github.com/phillipbooth/ai-project-readme-structure/issues"
+  },
+  "homepage": "https://github.com/phillipbooth/ai-project-readme-structure#readme"
+}
