@@ -1,0 +1,184 @@
+{
+    "$schema": "https://raw.githubusercontent.com/ai-readme/ai-project-readme-structure/main/ai-manifest.schema.json",
+    "readmeVersion": "1.0.0",
+    "lastUpdated": "2025-07-19T08:30:00Z",
+    "intendedLocation": ".ai/",
+    "app": {
+        "name": "[YOUR APPLICATION NAME HERE - e.g., MyWebApp]",
+        "version": "[YOUR APPLICATION VERSION HERE - e.g., 1.0.0]",
+        "repoUrl": "[YOUR REPOSITORY URL HERE - e.g., https://github.com/your-org/your-app-repo]",
+        "description": "A concise, AI-friendly description of the application's purpose and primary function. Focus on 'what it does' and 'why it exists'.",
+        "purpose": "To solve [Problem X] by providing [Solution Y] for [Target Audience Z]."
+    },
+    "technologyStack": {
+        "languages": [
+            "[EXAMPLE: JavaScript (ESNext)]",
+            "[EXAMPLE: TypeScript]",
+            "[EXAMPLE: HTML5]",
+            "[EXAMPLE: CSS3]",
+            "[EXAMPLE: Python 3.9+]"
+        ],
+        "frameworks": [
+            "[EXAMPLE: React (with Hooks)]",
+            "[EXAMPLE: Node.js (Express)]",
+            "[EXAMPLE: Tailwind CSS]",
+            "[EXAMPLE: Django]"
+        ],
+        "libraries": [
+            "[EXAMPLE: axios]",
+            "[EXAMPLE: lodash]",
+            "[EXAMPLE: react-query]"
+        ],
+        "databases": [
+            "[EXAMPLE: PostgreSQL]",
+            "[EXAMPLE: Redis (for caching)]"
+        ],
+        "cloudProviders": [
+            "[EXAMPLE: AWS (EC2, S3, RDS)]"
+        ],
+        "deploymentMethod": "[EXAMPLE: Dockerized containers via AWS ECS]"
+    },
+    "architecture": {
+        "type": "[EXAMPLE: Microservices - e.g., Monolith, Serverless, Event-Driven]",
+        "overview": "The application is composed of several independent microservices communicating via REST APIs. A React frontend consumes these APIs. Data is persisted in PostgreSQL, with Redis for session management and caching.",
+        "components": [
+            {
+                "name": "[EXAMPLE: Frontend Service]",
+                "description": "User interface built with React, responsible for user interaction and API consumption.",
+                "responsibilities": [
+                    "Displaying data",
+                    "Handling user input",
+                    "Routing"
+                ],
+                "dependencies": [
+                    "[EXAMPLE: Authentication Service]",
+                    "[EXAMPLE: Data API Service]"
+                ]
+            },
+            {
+                "name": "[EXAMPLE: Authentication Service]",
+                "description": "Handles user registration, login, and token management.",
+                "responsibilities": [
+                    "User authentication",
+                    "Authorization (JWT generation)",
+                    "User profile management"
+                ],
+                "dependencies": [
+                    "[EXAMPLE: PostgreSQL (for user data)]"
+                ]
+            },
+            {
+                "name": "[EXAMPLE: Data API Service]",
+                "description": "Provides core business logic and data access for the application's main features.",
+                "responsibilities": [
+                    "CRUD operations for core entities",
+                    "Business rule enforcement",
+                    "Integration with external services"
+                ],
+                "dependencies": [
+                    "[EXAMPLE: PostgreSQL]",
+                    "[EXAMPLE: Redis]"
+                ]
+            }
+        ],
+        "dataFlow": "User interacts with Frontend -> Frontend calls respective Microservice APIs -> Services interact with Databases/External Services -> Data returned to Frontend."
+    },
+    "development": {
+        "setupInstructions": [
+            "[EXAMPLE: Ensure Node.js (v18+) and Python (v3.9+) are installed.]",
+            "[EXAMPLE: Clone the repository: `git clone <repoUrl>`]",
+            "[EXAMPLE: Navigate to frontend: `cd frontend && npm install && npm start`]",
+            "[EXAMPLE: Navigate to backend: `cd backend && pip install -r requirements.txt && python manage.py runserver`]",
+            "[EXAMPLE: Ensure Docker is running for local database setup.]"
+        ],
+        "testingStrategy": "[EXAMPLE: Unit tests for individual functions/components (Jest, Pytest). Integration tests for API endpoints. End-to-end tests for critical user flows (Cypress).]"
+    },
+    "standardsAndConventions": {
+        "codingStandards": [
+            "[EXAMPLE: JavaScript: Airbnb ESLint rules.]",
+            "[EXAMPLE: Python: PEP 8 with Black formatter.]",
+            "[EXAMPLE: CSS: Tailwind CSS conventions, utility-first approach.]",
+            "[EXAMPLE: Git: Conventional Commits for commit messages.]"
+        ],
+        "namingConventions": [
+            "[EXAMPLE: CamelCase for JavaScript variables and functions.]",
+            "[EXAMPLE: snake_case for Python variables and functions.]",
+            "[EXAMPLE: PascalCase for React components.]"
+        ],
+        "securityGuidelines": [
+            "[EXAMPLE: OWASP Top 10 considerations.]",
+            "[EXAMPLE: Input validation on all API endpoints.]",
+            "[EXAMPLE: Environment variables for sensitive configurations.]"
+        ]
+    },
+    "requirementsAndConstraints": {
+        "explicitRequirements": [
+            {
+                "id": "[EXAMPLE: REQ-001]",
+                "description": "[EXAMPLE: Users must be able to register and log in securely.]",
+                "priority": "[EXAMPLE: High]",
+                "status": "[EXAMPLE: Implemented]"
+            },
+            {
+                "id": "[EXAMPLE: REQ-002]",
+                "description": "[EXAMPLE: The application must support real-time data updates for critical dashboards.]",
+                "priority": "[EXAMPLE: High]",
+                "status": "[EXAMPLE: In Progress]"
+            }
+        ],
+        "nonFunctionalRequirements": [
+            {
+                "type": "[EXAMPLE: Performance]",
+                "description": "[EXAMPLE: API response times must be under 200ms for 95% of requests.]",
+                "metric": "[EXAMPLE: 200ms @ 95th percentile]"
+            },
+            {
+                "type": "[EXAMPLE: Scalability]",
+                "description": "[EXAMPLE: The system must be able to handle 1000 concurrent users without degradation.]",
+                "metric": "[EXAMPLE: 1000 concurrent users]"
+            },
+            {
+                "type": "[EXAMPLE: Security]",
+                "description": "[EXAMPLE: All data in transit must be encrypted (HTTPS/TLS).]",
+                "metric": "[EXAMPLE: HTTPS/TLS enforcement]"
+            }
+        ],
+        "explicitExclusions": [
+            "[EXAMPLE: No direct DOM manipulation outside of React's lifecycle methods.]",
+            "[EXAMPLE: No jQuery usage.]",
+            "[EXAMPLE: No global state management without explicit Redux/Context API patterns.]",
+            "[EXAMPLE: No custom CSS unless absolutely necessary; prefer Tailwind utilities.]"
+        ]
+    },
+    "glossary": [
+        {
+            "term": "[EXAMPLE: JWT]",
+            "definition": "[EXAMPLE: JSON Web Token, used for secure information exchange between parties.]"
+        },
+        {
+            "term": "[EXAMPLE: ORM]",
+            "definition": "[EXAMPLE: Object-Relational Mapping, a technique for converting data between incompatible type systems using object-oriented programming languages.]"
+        }
+    ],
+    "todo": [
+        {
+            "id": "[EXAMPLE: TODO-001]",
+            "description": "[EXAMPLE: Review and update all API endpoint validation schemas.]",
+            "priority": "[EXAMPLE: High]",
+            "assignedTo": "[EXAMPLE: Backend Team]",
+            "dueDate": "[EXAMPLE: 2025-08-01]"
+        },
+        {
+            "id": "[EXAMPLE: TODO-002]",
+            "description": "[EXAMPLE: Optimize Firestore queries for frequently accessed data to reduce read operations.]",
+            "priority": "[EXAMPLE: Medium]",
+            "assignedTo": "[EXAMPLE: Database Specialist]",
+            "dueDate": "[EXAMPLE: 2025-08-15]"
+        }
+    ],
+    "futureWork": [
+        "[EXAMPLE: Implement WebSockets for enhanced real-time features.]",
+        "[EXAMPLE: Add internationalization (i18n) support.]",
+        "[EXAMPLE: Explore server-side rendering for improved SEO and initial load times.]"
+    ]
+}
