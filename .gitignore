@@ -41,9 +41,6 @@ logs/
 coverage/
 .nyc_output/
 
-# Editor config files (if not shared)
-.editorconfig
-
 # Temporary files
 *.tmp
 *.swp
