@@ -1,13 +1,13 @@
- # AI-Readme: A Standard for AI-Friendly Documentation
+ # AI Project README Structure
 
 [![NPM version](https://img.shields.io/npm/v/@phillipbooth/ai-project-readme-structure.svg)](https://www.npmjs.com/package/@phillipbooth/ai-project-readme-structure)
-[![License](https://img.shields.io/npm/l/@phillipbooth/ai-project-readme-structure.svg)](https://github.com/phillipbooth/ai-project-readme-structure/blob/main/LICENSE)
+[![License](https://img.shields.io/npm/l/@phillipbooth/ai-project-readme-structure.svg)](https://github.com/phillipbooth/ai-project-readme-structure/blob/main/LICENSE.md)
 
 A standardized, machine-readable, and human-comprehensible structure for project documentation, designed to help AI tools understand your code.
 
 ## Overview
 
-`@ai-readme/ai-project-readme-structure` is an NPM package that defines a standard for project documentation. Its primary goal is to enhance the ability of AI development tools (like large language models and code assistants) to understand the context, architecture, requirements, and conventions of a software project.
+`@phillipbooth/ai-project-readme-structure` is an NPM package that defines a standard for project documentation. Its primary goal is to enhance the ability of AI development tools (like large language models and code assistants) to understand the context, architecture, requirements, and conventions of a software project.
 
 By adopting this standard, you provide AI with a structured "map" of your application, leading to more accurate suggestions, better code generation, and more relevant assistance.
 
@@ -34,10 +34,17 @@ This NPM package provides templates and a JSON schema to help you adopt the stan
 
 2.  **Copy the Templates**
 
-    The easiest way to start is by copying the template files from this package into your new `.ai` directory. You can find them in `node_modules/@phillipbooth/ai-project-readme-structure/templates/.ai/`.
+    The easiest way to start is by copying the template files from this package into your new `.ai` directory. After installing the package, run one of the following commands from your project root:
 
-    *   `templates/.ai/ai-manifest.json` -> `your-project/.ai/ai-manifest.json`
-    *   `templates/.ai/README.md` -> `your-project/.ai/README.md`
+    **For Linux/macOS:**
+    ```bash
+    cp -r node_modules/@phillipbooth/ai-project-readme-structure/templates/.ai/* .ai/
+    ```
+
+    **For Windows (Command Prompt):**
+    ```cmd
+    xcopy node_modules\\@phillipbooth\\ai-project-readme-structure\\templates\\.ai .ai /E /I
+    ```
 
 3.  **Populate Your `ai-manifest.json`**
 
