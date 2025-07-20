@@ -1,5 +1,5 @@
 // index.js
-// This file serves as the main entry point for the @ai-readme/ai-project-readme-structure NPM package.
+// This file serves as the main entry point for the @phillipbooth/ai-project-readme-structure NPM package.
 // For a package that primarily defines a standard and provides templates,
 // this file might be minimal or serve to export paths to the templates.
 
@@ -27,4 +27,4 @@ module.exports = {
 };
 
 // You could also add a simple console log for when the package is required directly
-// console.log("The @ai-readme/ai-project-readme-structure package has been loaded.");
+// console.log("The @phillipbooth/ai-project-readme-structure package has been loaded.");
