@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/ai-readme/ai-project-readme-structure/main/ai-manifest.schema.json",
+    "$schema": "https://raw.githubusercontent.com/phillipbooth/ai-project-readme-structure/main/ai-manifest.schema.json",
     "readmeVersion": "1.0.0",
     "lastUpdated": "2025-07-19T08:30:00Z",
     "intendedLocation": ".ai/",
