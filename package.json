@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"No tests defined for this README structure project.\"",
-    "validate-ai-manifest": "echo \"Add schema validation script here if needed.\""
+    "validate-ai-manifest": "echo \"Add schema validation script here if needed.\"",
+    "postinstall": "echo \"\\n✅ @phillipbooth/ai-project-readme-structure installed!\\n\\nTo get started, copy the templates into a '.ai' directory in your project root:\\n\\n👉 For Linux/macOS:\\ncp -r node_modules/@phillipbooth/ai-project-readme-structure/templates/.ai/* .ai/\\n\\n👉 For Windows (CMD):\\nxcopy node_modules\\\\@phillipbooth\\\\ai-project-readme-structure\\\\templates\\\\.ai .ai /E /I\\n\""
   },
   "files": [
     "index.js",
